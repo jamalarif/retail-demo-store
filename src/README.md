@@ -1,5 +1,6 @@
 # Local Development Instructions
 
+Test
 The Retail Demo Store's web services such as [users](./users), [carts](./carts), [orders](./orders), [products](./products), and others can be run locally on your development system using [Docker Compose](https://docs.docker.com/compose/). You can choose to run them all locally or just one or two locally and the rest running in your AWS account. For example, suppose you're working on an enhancement or fix in the [products](./products) service. You can run just that service locally to test your changes while all of the other services are running in your AWS account. If your changes require UI testing, you can run the [web-ui](./web-ui) in a local container as well configured to connect to your local product service instance while still having both of them connect to the other services running in your AWS account.
 
 Before you can run the Retail Demo Store web services locally, you must first deploy the Retail Demo Store project to your AWS account and then clone this repository to your local machine. The instructions below provide additional details on configuration and how to setup the services to run locally. The [docker-compose.yml](./docker-compose.yml) file includes the configuration used by Docker Compose. Note that there are some dependencies between services which are noted.
