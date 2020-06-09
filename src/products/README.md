@@ -1,6 +1,6 @@
 # Retail Demo Store Products Service
 
-Test
+TestTest
 The Products web service provides a RESTful API for retrieving product information. The [Web UI](../web-ui) makes calls to this service when a user is viewing products and categories.
 
 When deployed to AWS, CodePipeline is used to build and deploy the Products service as a Docker container to Amazon ECS behind an Application Load Balancer. The Products service can also be run locally in a Docker container. This makes it easier to iterate on and test changes locally before commiting.
